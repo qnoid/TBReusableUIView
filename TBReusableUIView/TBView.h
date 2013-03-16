@@ -1,5 +1,5 @@
 //
-//  TBViewController.h
+//  TBView.h
 //  TBReusableUIView
 //
 //  Created by Markos Charatzas on 16/03/2013.
@@ -24,9 +24,13 @@
 //  SOFTWARE.
 //
 
-
 #import <UIKit/UIKit.h>
 
-@interface TBViewController : UIViewController
+#define loadView() \
+NSBundle *mainBundle = [NSBundle mainBundle]; \
+NSArray *views = [mainBundle loadNibNamed:NSStringFromClass([self class]) owner:self options:nil]; \
+[self addSubview:views[0]];
 
+@interface TBView : UIView
+@property(nonatomic, weak) IBOutlet UILabel *label;
 @end

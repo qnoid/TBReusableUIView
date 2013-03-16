@@ -1,5 +1,5 @@
 //
-//  TBViewController.h
+//  TBView.m
 //  TBReusableUIView
 //
 //  Created by Markos Charatzas on 16/03/2013.
@@ -24,9 +24,36 @@
 //  SOFTWARE.
 //
 
+#import "TBView.h"
 
-#import <UIKit/UIKit.h>
+@implementation TBView
 
-@interface TBViewController : UIViewController
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if(!self){
+        return nil;
+    }
+    
+    loadView()
+    
+    self.label.text = [NSString stringWithFormat:@"%s", __PRETTY_FUNCTION__];
+    
+return self;
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if(!self){
+        return nil;
+    }
+
+    loadView()
+    
+    self.label.text = [NSString stringWithFormat:@"%s", __PRETTY_FUNCTION__];
+
+return self;
+}
 
 @end

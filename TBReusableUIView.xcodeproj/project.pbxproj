@@ -23,6 +23,8 @@
 		BD921E5916F4936C00B93E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD921E3416F4936C00B93E32 /* Foundation.framework */; };
 		BD921E6116F4936C00B93E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD921E5F16F4936C00B93E32 /* InfoPlist.strings */; };
 		BD921E6416F4936D00B93E32 /* TBReusableUIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD921E6316F4936D00B93E32 /* TBReusableUIViewTests.m */; };
+		BD921E6F16F49CB700B93E32 /* TBView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD921E6E16F49CB700B93E32 /* TBView.m */; };
+		BD921E7116F4A15300B93E32 /* TBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD921E7016F4A15300B93E32 /* TBView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		BD921E6016F4936C00B93E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BD921E6216F4936C00B93E32 /* TBReusableUIViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBReusableUIViewTests.h; sourceTree = "<group>"; };
 		BD921E6316F4936D00B93E32 /* TBReusableUIViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBReusableUIViewTests.m; sourceTree = "<group>"; };
+		BD921E6D16F49CB700B93E32 /* TBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBView.h; sourceTree = "<group>"; };
+		BD921E6E16F49CB700B93E32 /* TBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBView.m; sourceTree = "<group>"; };
+		BD921E7016F4A15300B93E32 /* TBView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,9 @@
 				BD921E4A16F4936C00B93E32 /* TBViewController.h */,
 				BD921E4B16F4936C00B93E32 /* TBViewController.m */,
 				BD921E4D16F4936C00B93E32 /* TBViewController.xib */,
+				BD921E6D16F49CB700B93E32 /* TBView.h */,
+				BD921E6E16F49CB700B93E32 /* TBView.m */,
+				BD921E7016F4A15300B93E32 /* TBView.xib */,
 				BD921E3916F4936C00B93E32 /* Supporting Files */,
 			);
 			path = TBReusableUIView;
@@ -237,6 +245,7 @@
 				BD921E4716F4936C00B93E32 /* Default@2x.png in Resources */,
 				BD921E4916F4936C00B93E32 /* Default-568h@2x.png in Resources */,
 				BD921E4F16F4936C00B93E32 /* TBViewController.xib in Resources */,
+				BD921E7116F4A15300B93E32 /* TBView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +283,7 @@
 				BD921E3F16F4936C00B93E32 /* main.m in Sources */,
 				BD921E4316F4936C00B93E32 /* TBAppDelegate.m in Sources */,
 				BD921E4C16F4936C00B93E32 /* TBViewController.m in Sources */,
+				BD921E6F16F49CB700B93E32 /* TBView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
